@@ -258,7 +258,7 @@ def reverse_sampling_with_mi(trained_labels: np.ndarray,
         raise RuntimeError(f"Reverse sampling failed: {e}")
 
 
-def virtual_screening_pipeline(model: nn.Module,
+def sampling_pipeline(model: nn.Module,
                               unlabeled_smiles: List[str],
                               trained_labels: np.ndarray,
                               abeta_feature: torch.Tensor,
@@ -504,7 +504,7 @@ def screening_from_config(config,
     os.makedirs(output_dir, exist_ok=True)
     
     # Run screening pipeline
-    results = virtual_screening_pipeline(
+    results = sampling_pipeline(
         model=model,
         unlabeled_smiles=unlabeled_smiles,
         trained_labels=trained_labels,
@@ -533,4 +533,5 @@ def screening_from_config(config,
     else:
         logger.error(f"Screening iteration {iteration} failed: {results.get('error', 'Unknown error')}")
     
+
     return results
