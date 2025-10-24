@@ -4,6 +4,11 @@
 
 SMDNet is an innovative semi-supervised multi-modal deep learning network designed to facilitate Aβ42-targeted probe discovery under low-data conditions. This framework addresses the critical challenge of limited labeled data in chemical probe development by integrating heterogeneous molecular features through advanced neural architectures and implementing an iterative self-training strategy.
 
+## Model Architecture
+![SMDNet Architecture](images/architecture.png)
+*Overview of proposed SMDNet. (A) The model architecture with input representation module, multi-modal feature fusion module, and a prediction module. (B) The self-training pipeline: training, pseudo-labeling, sampling, and updating.
+
+
 ## Key Features
 
 - **Multi-modal Integration**: Combines molecular graphs, fingerprints, and protein descriptors through cross-attention mechanisms
@@ -134,6 +139,7 @@ Effective Generalization: Validated on external test sets
 Practical Utility: Successfully guided the design and synthesis of novel ThT-derived probes
 Interpretable Predictions: Atom-level importance scores align with chemical expertise
 The framework identified TA3 as a promising candidate with improved binding affinity and imaging specificity for Aβ42 aggregates.
+
 
 
 
