@@ -99,17 +99,11 @@ SMDNet/
 └── models/               # Trained models 
 
 Model Architecture
-
 SMDNet integrates several advanced deep learning components:
-
 Graph Attention Networks (GAT): Process molecular graph structures
-
 Cross-Attention Layers: Fuse molecular graph and fingerprint features
-
 Adaptive Layer Normalization (AdaLN): Condition normalization on Aβ42 protein features
-
 MC-Dropout: Estimate prediction uncertainty for semi-supervised learning
-
 Confidence and Distribution-Aware Sampling: Select reliable pseudo-labeled molecules while alleviating label imbalance
 
 
@@ -135,16 +129,12 @@ mc_dropout_samples = 10  # MC-Dropout iterations
 
 Results and Applications
 SMDNet has demonstrated:
-
 Superior Performance: Outperforms baseline methods in predicting Aβ42 binding affinity
-
 Effective Generalization: Validated on external test sets
-
 Practical Utility: Successfully guided the design and synthesis of novel ThT-derived probes
-
 Interpretable Predictions: Atom-level importance scores align with chemical expertise
-
 The framework identified TA3 as a promising candidate with improved binding affinity and imaging specificity for Aβ42 aggregates.
+
 
 
 
