@@ -100,8 +100,8 @@ SMDNet/
 ├── scripts/              # Execution scripts
 │   ├── run_training.py   # Training entry point
 │   └── run_screening.py  # Screening entry point
-├── data/                 # Data directory
-└── models/               # Trained models 
+└──── data/                 # Data directory
+
 
 Model Architecture
 SMDNet integrates several advanced deep learning components:
@@ -139,6 +139,7 @@ Effective Generalization: Validated on external test sets
 Practical Utility: Successfully guided the design and synthesis of novel ThT-derived probes
 Interpretable Predictions: Atom-level importance scores align with chemical expertise
 The framework identified TA3 as a promising candidate with improved binding affinity and imaging specificity for Aβ42 aggregates.
+
 
 
 
